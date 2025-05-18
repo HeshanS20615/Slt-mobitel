@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #dceffc;
+}
+
+/* Layout Wrapper */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #004a99;
+    color: white;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.program-title {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    padding: 12px 8px;
+    margin-bottom: 10px;
+    background: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar li.active {
+    background-color: #0066cc;
+}
+
+/* Top Bar */
+.topbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.topbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Main Content */
+.content {
+    margin-left: 250px;
+    padding: 80px 50px;
+    width: calc(100% - 250px);
+}
+
+.form-box {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+}
+
+.form-box h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row.full {
+    flex-direction: column;
+}
+
+input, textarea {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #1a53ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
