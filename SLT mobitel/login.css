@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #e6f0f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .login-form {
+    background-color: #004b91;
+    color: white;
+    padding: 40px;
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .login-form h2:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .login-form label {
+    display: block;
+    margin: 10px 0 5px;
+    transition: 0.3s;
+  }
+  
+  .login-form label:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .login-form input:hover {
+    border: 2px solid #00aaff;
+  }
+  
+  .login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: white;
+    color: #004b91;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .signup-text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .signup-text:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .signup-text a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+    transition: 0.3s;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .divider span {
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .divider span:hover {
+    text-decoration: underline;
+    text-decoration-color: #00aaff;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: white;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+  
+  .divider:hover::before,
+  .divider:hover::after {
+    background: #00aaff;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-btn {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 8px; /* square with slight round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .social-btn:hover {
+    background-color: white;
+    box-shadow: none;
+  }
+  
+  .social-btn img {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+  }
+  
+  .social-btn img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px #00aaff);
+  }
+  
+  .illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .illustration img {
+    max-width: 300px;
+    height: auto;
+  }
+  
